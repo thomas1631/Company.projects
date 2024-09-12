@@ -1,0 +1,77 @@
+# Revenue and Profit Analysis
+
+This project demonstrates a comprehensive analysis of revenue and profit drivers using SQL, Power BI, and Python. The goal is to identify key factors that impact profitability and provide actionable insights to maximize profit and revenue.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Data Exploration and Cleaning](#data-exploration-and-cleaning)
+- [Data Analysis](#data-analysis)
+- [Data Visualization with Power BI](#data-visualization-with-power-bi)
+- [Key Insights and Recommendations](#key-insights-and-recommendations)
+- [Technologies Used](#technologies-used)
+- [How to Use](#how-to-use)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+This project focuses on analyzing procurement data to understand the main drivers of profit and revenue. The analysis includes data exploration, cleaning, transformation, visualization, and generating actionable insights.
+
+## Data Exploration and Cleaning
+
+1. **SQL Data Cleaning**: 
+   - Imported raw data into a SQL database.
+   - Performed initial data cleaning, including removing duplicates, handling missing values, and correcting data types.
+   - Identified key metrics like `Order Value`, `Revenue`, and `Profit`.
+
+2. **Data Profiling**:
+   - Conducted a data profiling exercise to understand the distribution, outliers, and patterns in key columns such as `Supplier Name`, `Commodity Description`, `Order Type`, and `Procurement Category`.
+
+3. **Data Transformation**:
+   - Applied normalization and calculated derived columns such as `Adjusted Profit` (considering a 5% rebate from preferred suppliers).
+   - Extracted and transformed text fields like `Agility.AssetDescription` to identify patterns and groupings.
+
+## Data Analysis
+
+1. **Correlation Analysis**:
+   - Used Python to calculate the correlation between various factors and profit.
+   - Identified the 'Value Bracket' as the highest correlated factor with profit after adjusting for rebates.
+
+2. **Variance Analysis**:
+   - Performed variance analysis on categorical variables to understand their impact on profitability.
+   - Analyzed main drivers in the most correlated column (`Value Bracket`).
+
+3. **Predictive Modeling**:
+   - Developed a regression model to quantify the impact of key variables on profit.
+   - Identified the most significant predictors of profitability.
+
+## Data Visualization with Power BI
+
+- Created a Power BI dashboard to monitor revenue and profit drivers in real time.
+- Visualizations include:
+  - **Revenue by Value Bracket**: Bar chart highlighting the most profitable brackets.
+  - **Profit Trends**: Line chart showing month-over-month profit trends.
+  - **Supplier Performance**: Matrix chart comparing preferred vs. non-preferred suppliers.
+
+**Power BI Dashboard Screenshot:**
+![Dashboard Screenshot](path/to/dashboard_image.png)
+
+## Key Insights and Recommendations
+
+1. **Focus on Low to Mid Value Brackets**:
+   - The majority of profit comes from orders within the £0 to £5,000 range. Maximizing orders in this range will boost profitability.
+
+2. **Optimize High Value Orders**:
+   - High-value orders (over £15,001) should be reviewed for efficiency and cost-saving opportunities.
+
+3. **Improve Supplier Negotiations**:
+   - Leverage the 5% rebate from preferred suppliers more effectively.
+
+4. **Enhance Operational Efficiency**:
+   - Streamline processes for high-frequency, low-value orders to reduce costs and improve margins.
+
+## Technologies Used
+
+- **SQL**: For data extraction, transformation, and cleaning.
+- **Python**: For data analysis, correlation, variance analysis, and modeling.
+- **Power BI**: For data visualization and dashboard creation. 
